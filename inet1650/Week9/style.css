@@ -1,0 +1,44 @@
+*{
+	margin: 1px dotted blue;
+}
+
+ 
+p {
+	background: #c2f670;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	font-size: 20px;
+	margin: 50px;
+	}
+
+p#A {
+	border: medium double black;
+}
+
+p#B {
+	overflow: scroll;
+}
+
+p#D{
+	padding: 2em;
+}
+
+p#D{
+	padding: 2em;
+	border: 4px solid red;
+}
+p#E{
+	margin: 2em;
+	border: 4px solid red;
+}
+p#F{
+	padding: 1em 1em 1em 6em;
+	border: medium dashed black;
+	margin: 1em 6em;
+}
+p#G{
+	padding: 2em 50px;
+	border: thin solid blue;
+	margin: 0 auto;
+}
