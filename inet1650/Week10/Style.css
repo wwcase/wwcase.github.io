@@ -39,8 +39,6 @@ p {
 #nav {
 	overflow: hidden;
 	width: 100%;
-
-
 }
 #nav ul {
 	list-style:none;
@@ -66,9 +64,10 @@ p {
 }
 #nav ul a:link {
     color: #000;
+	font-weight: bold;
   }
 #nav ul a:visited {
-    color: #2E64FE;
+    color: #000;
   }
 #nav ul a:focus {
 	color:#6E6E6E
@@ -84,7 +83,7 @@ p {
 	background-color: #2E2E2E;
 	border: 8px ridge #A4A4A4;
 	border-radius: .6em;
-	margin:30px auto;
+	margin:10px auto;
 	width: 1000px;
 	height: 300px;
 }
@@ -183,17 +182,23 @@ p.Box2Paragraph{
 	width: 1000px;
 	height: 300px;
 }
-img.R5-D4 {
+#box3 img.R5-D4 {
 	float: left;
 	border: 1px solid #gray;
 	border-radius: .5em;
 	width: 50%;
 	height: 100%;
 }
-img.R5-D4photos{
+#box3 img.R5-D4photos1{
+	width: 11%;
+	height: 25%;
+	border-radius: .5em;
+	border-radius: .6em;
+	margin: 30px 0 0 100px;
+}
+#box3 img.R5-D4photos2{
 	width: 15%;
 	height: 25%;
-	border-radius: .8em;
+	border-radius: .5em;
 	margin: 30px 0 0 20px;
-
 }
