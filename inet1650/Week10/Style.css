@@ -37,7 +37,7 @@ p {
 /* styles for navigation */
 #nav {
 	overflow: hidden;
-	width: 400px;
+	width: 100%;
 	margin: auto;
 	border: 2px solid red;
 }
