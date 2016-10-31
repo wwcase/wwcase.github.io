@@ -1,0 +1,170 @@
+.wrapper {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+	background-image: linear-gradient(360deg, gray, black);
+}
+#container{
+	background-image: url("Images/star-space-tile.jpg");
+
+}
+
+
+h1{
+	color: white;
+	text-align: center
+
+}
+h2 {
+	color: #D8D8D8;
+	font-size: 18px;
+}
+
+p.heading {
+	color: white;
+
+}
+a.home {
+	color: #FF00FF;
+	font-size: 20px;
+
+}
+p {
+	color: white;
+	font-size: 16;
+}
+
+
+/* styles for navigation */
+#nav {
+	overflow: hidden;
+	width: 100%;
+
+
+}
+#nav ul {
+	list-style:none;
+	padding: 0;
+	margin:0 auto;
+	width: 12.5em;
+} 
+#nav ul li {
+	font-weight: normal;
+	float: left;
+
+}
+#nav ul li a{
+	display: block;
+	padding: .5em;
+	color: black;
+	background-color: #F7F2E0;
+	border: 1px solid #A4A4A4;
+	border-radius: .5em;
+	margin: .25em;
+	text-decoration: none;
+
+}
+#nav ul a:link {
+    color: #000;
+  }
+#nav ul a:visited {
+    color: #2E64FE;
+  }
+#nav ul a:focus {
+	color:#6E6E6E
+	border-color: #fff;
+}
+#nav ul a:hover {
+    color: #2E9AFE;
+	border-color: #fff;
+  }
+  
+/* ----------------styles for Box1 --------------*/
+#box1{
+	background-color: #2E2E2E;
+	border: 8px ridge #A4A4A4;
+	border-radius: .6em;
+	margin:30px auto;
+	width: 1000px;
+	height: 300px;
+}
+img.r2-d2 {
+	float: left;
+	border: 1px solid #gray;
+	width: 50%;
+	height: 100%;
+	clear: right;
+
+}
+img.r2-d2photos{
+	width:10%;
+	height: 20%;
+	margin: 30px 0 0 10px;
+	float: left;
+	clear: right;
+	border-radius: .8em;
+
+}
+p.Box1Paragraph{
+	float: left;
+	width: 500px;
+	margin: auto;
+}
+/* --------------styles for Box 2--------------*/
+#box2{
+	background-color: #2E2E2E;
+	border: 8px ridge #A4A4A4;
+	border-radius: .6em;
+	margin:30px auto;
+	width: 1000px;
+	height: 300px;
+
+}
+img.bb-8 {
+	float: right;
+	border: 1px solid #gray;
+	border-radius: .5em;
+	width: 50%;
+	height: 100%;
+}
+#box2 img.bb-8photos{
+	width:10%;
+	height: 20%;
+	border-radius: .8em;
+	margin: 30px 0 0 10px;
+}
+#box2.BB-8{
+	border: 1px solid red;
+	float: right;
+	width: 50%;
+	height: 50%;
+	clear: right;
+}
+p.Box2Paragraph{
+	float: left;
+	width: 500px;
+	margin: auto;
+	
+}
+/* --------------styles for Box 3---------------*/
+#box3{
+	background-color: #2E2E2E;
+	border: 8px ridge #A4A4A4;
+	border-radius: .6em;
+	margin:30px auto;
+	width: 1000px;
+	height: 300px;
+}
+img.R5-D4 {
+	float: left;
+	border: 1px solid #gray;
+	border-radius: .5em;
+	width: 50%;
+	height: 100%;
+}
+img.R5-D4photos{
+	width: 15%;
+	height: 25%;
+	border-radius: .8em;
+	padding: 25px;
+}
