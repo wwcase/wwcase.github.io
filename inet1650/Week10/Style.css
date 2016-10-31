@@ -88,7 +88,7 @@ p {
 	width: 1000px;
 	height: 300px;
 }
-img.r2-d2 {
+#box1 img.r2-d2 {
 	float: left;
 	border: 1px solid #gray;
 	width: 50%;
@@ -96,20 +96,36 @@ img.r2-d2 {
 	clear: right;
 
 }
-img.r2-d2photos{
-	width:10%;
-	height: 20%;
+#box1 img.r2-d2photos1{
+	width:12%;
+	height: 25%;
+	margin: 30px 0 0 60px;
+	float: left;
+	clear: right;
+	border-radius: .6em;
+}
+#box1 img.r2-d2photos2{
+	width:12%;
+	height: 25%;
 	margin: 30px 0 0 10px;
 	float: left;
 	clear: right;
-	border-radius: .8em;
-
+	border-radius: .6em;
 }
-p.Box1Paragraph{
+#box1 img.r2-d2photos3{
+	width:12%;
+	height: 25%;
+	margin: 30px 0 0 10px;
+	float: left;
+	clear: right;
+	border-radius: .6em;
+}
+#box1 p.Box1Paragraph{
 	float: left;
 	width: 500px;
 	margin: auto;
 }
+
 /* --------------styles for Box 2--------------*/
 #box2{
 	background-color: #2E2E2E;
@@ -127,10 +143,22 @@ img.bb-8 {
 	width: 50%;
 	height: 100%;
 }
-#box2 img.bb-8photos{
+#box2 img.bb-8photos1{
 	width:10%;
-	height: 20%;
-	border-radius: .8em;
+	height: 25%;
+	border-radius: .6em;
+	margin: 30px 0 0 50px;
+}
+#box2 img.bb-8photos2{
+	width: 12%;
+	height: 25%;
+	border-radius: .6em;
+	margin: 30px 0 0 10px;
+}
+#box2 img.bb-8photos3{
+	width: 15%;
+	height: 25%;
+	border-radius: .6em;
 	margin: 30px 0 0 10px;
 }
 #box2.BB-8{
@@ -166,5 +194,6 @@ img.R5-D4photos{
 	width: 15%;
 	height: 25%;
 	border-radius: .8em;
-	padding: 25px;
+	margin: 30px 0 0 20px;
+
 }
