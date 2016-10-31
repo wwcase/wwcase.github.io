@@ -1,12 +1,13 @@
 body {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
 	background-image: linear-gradient(360deg, gray, black);
 }
 #container{
-	width: 100%;
+	width: 80%;
 	background-image: url("Images/star-space-tile.jpg");
-}
+	margin: auto;
+	}
 
 
 h1{
@@ -17,6 +18,7 @@ h1{
 h2 {
 	color: #D8D8D8;
 	font-size: 18px;
+	padding: 10px 0 0 0;
 }
 
 p.heading {
@@ -37,9 +39,8 @@ p {
 /* styles for navigation */
 #nav {
 	overflow: hidden;
-	width: 220px;
+	width: 205px;
 	margin: auto;
-	border: 2px solid red;
 }
 #nav ul {
 	list-style:none;
@@ -85,7 +86,7 @@ p {
 	box-shadow: 0px 0px 20px #BDBDBD;
 	border-radius: .6em;
 	margin:10px auto;
-	width: 1050px;
+	width: 875px;
 	height: 300px;
 }
 #box1 img.r2-d2 {
@@ -94,13 +95,13 @@ p {
 	width: 50%;
 	height: 100%;
 	clear: right;
-	padding: 0 10px 0 0;
+	padding: 0 20px 0 0;
 
 }
 #box1 img.r2-d2photos1{
 	width:12%;
 	height: 25%;
-	margin: 30px 0 0 60px;
+	margin: 30px 0 0 20px;
 	float: left;
 	clear: right;
 	border-radius: .6em;
@@ -123,7 +124,7 @@ p {
 }
 #box1 p.Box1Paragraph{
 	float: left;
-	width: 500px;
+	width: 400px;
 	margin: auto;
 }
 
@@ -133,7 +134,7 @@ p {
 	box-shadow: 0px 0px 20px #BDBDBD;
 	border-radius: .6em;
 	margin:30px auto;
-	width: 1050px;
+	width: 875px;
 	height: 300px;
 	padding: 0 0 0 15px;
 
@@ -149,7 +150,7 @@ img.bb-8 {
 	width:10%;
 	height: 25%;
 	border-radius: .6em;
-	margin: 30px 0 0 50px;
+	margin: 30px 0 0 20px;
 }
 #box2 img.bb-8photos2{
 	width: 12%;
@@ -172,9 +173,8 @@ img.bb-8 {
 }
 p.Box2Paragraph{
 	float: left;
-	width: 500px;
+	width: 400px;
 	margin: auto;
-	
 }
 /* --------------styles for Box 3---------------*/
 #box3{
@@ -182,7 +182,7 @@ p.Box2Paragraph{
 	box-shadow: 0px 0px 20px #BDBDBD;
 	border-radius: .6em;
 	margin:30px auto;
-	width: 1050px;
+	width: 875px;
 	height: 300px;
 }
 #box3 img.R5-D4 {
@@ -198,11 +198,16 @@ p.Box2Paragraph{
 	height: 25%;
 	border-radius: .5em;
 	border-radius: .6em;
-	margin: 30px 0 0 100px;
+	margin: 30px 0 0 80px;
 }
 #box3 img.R5-D4photos2{
 	width: 15%;
 	height: 25%;
 	border-radius: .5em;
 	margin: 30px 0 0 20px;
+}
+p.Box3Paragraph{
+	float: left;
+	width: 400px;
+	margin: auto;
 }
