@@ -39,14 +39,14 @@ p {
 	overflow: hidden;
 	width: 300px;
 	margin: auto;
-	border: 2px solid red;
+
 }
 #nav ul {
 	list-style:none;
 	padding: 0;
 	margin: auto;
 	width: 100%;
-	border: 2px solid red;
+
 } 
 #nav ul li {
 	font-weight: normal;
