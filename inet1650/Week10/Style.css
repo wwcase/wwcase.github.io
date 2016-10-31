@@ -1,6 +1,6 @@
 body {
     max-width: 1366px;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
 	background-image: linear-gradient(360deg, gray, black);
 }
@@ -37,7 +37,7 @@ p {
 /* styles for navigation */
 #nav {
 	overflow: hidden;
-	width: 200px;
+	width: 220px;
 	margin: auto;
 	border: 2px solid red;
 }
