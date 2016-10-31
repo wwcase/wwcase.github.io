@@ -37,8 +37,9 @@ p {
 /* styles for navigation */
 #nav {
 	overflow: hidden;
-	width: 300px;
+	width: 400px;
 	margin: auto;
+	border: 2px solid red;
 }
 #nav ul {
 	list-style:none;
