@@ -1,0 +1,111 @@
+.school{
+	font-weight: bold;
+}
+
+#header {
+    border: 2px solid #000000; 
+	padding: 15px;
+	text-align: center;
+}
+
+#main {
+	float: left;
+	width:65%;
+	margin:0 0 0 4%;
+	outline: 2px dashed #0053ae;
+	 }
+.Section1{
+	float: left;
+	border: 2px solid blue;
+	}
+.Section2{
+	float: left;
+	border: 2px solid blue;
+	}
+#SectionLabel {
+   position: relative;
+    top:0;
+    left:0;
+    background-color: #EECB1D;
+	width: 100px;
+	padding: 0 3px 3px 0;
+}
+#SectionEndLabel {
+   position: relative;
+	float: right;
+    bottom:0;
+    background-color: #EECB1D;
+	width: 100px;
+}
+p code, li code {
+	background-color: #ECECEC;
+	}	 
+#nav {
+
+	float: left;
+	width: 26%;
+	margin: 0 5% 0 0;
+	outline: 2px solid #dd0009;
+}
+#nav li{
+display: list-item;
+
+margin-left: 25px;
+}
+a:visited {
+    color: #D64078;
+}
+a:link {
+    color: #D64078;
+    text-decoration: none;
+}
+#special {
+    float:left;
+    top:0;
+    right:0;
+	margin-bottom: -10px;
+    background-color: #D64078;
+	width: 90px;
+}
+#footer {
+	clear: left; /* starts the footer below the floated content */
+	padding: 15px;
+	background: #CCC;
+	text-align: center;}
+
+body {
+	font-family: verdana, sans-serif; 
+	/* font-size: small; */
+	margin: 0;
+	padding: 0;}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	margin-top: 1em;
+	}
+#footer {
+  width:100%;
+  bottom: 0;
+  height: 58px;
+  border: 2px solid #8EC052;
+  text-align: center;
+  background-color: white;
+}
+#SectionFooter {
+   float:left;
+   top:0;
+   left:0;
+   background-color: #8EC052;
+   width: 90px;
+}
+#SectionFooter2 {
+   float: right;
+   bottom:0;
+   background-color: #8EC052;
+   width: 90px;
+}
+	
