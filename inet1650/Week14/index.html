@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="../../WandaCase.ico">
+		<title>WandaCaseWeek14</title>
+<style> 
+.AssignmentInfo{
+	text-align: left;
+	color: black;
+}
+h1 {
+	color: #969696;
+	color: white;
+    text-shadow: 3px 3px 10px #3a5e98;
+	font-size: 50px;
+	text-align: center;
+
+}
+#color{
+	width: 100%;
+	height:800px;
+	background-color: #969696;
+	-webkit-animation-name: color; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+    animation-name:color;
+		animation-duration: 8s; 
+		animation-timing-function: linear;
+		-webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+		animation-iteration-count: infinite;
+		-webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+}
+img.cowboys{
+
+	width: 50%;
+	height: auto;
+	/*transform: rotate(-10deg);*/
+	/*transform: translateX(50px);*/
+	/*transform: translateY(25px);*/
+		transform: translate(250px, 0px);
+	/*transform: scaleX(1);*/
+	/*transform: scale(1.5);*/
+	/*transform: skewX(15deg);*/
+	/*transform: skewY(15deg);*/
+	/*transform: skew(15deg, 30deg);*/
+	-webkit-transition: -webkit-transform .3s ease-in-out; 
+	}
+img:hover, img:focus{
+		-webkit-transform: scale(1.25) rotate(-15deg) translate(150px,100px);
+		-moz-transform: scale(1.25) rotate(-15deg) translate(50px,30px);
+		-o-transform: scale(1.25) rotate(-15deg) translate(50px,30px);
+		-ms-transform: scale(1.25) rotate(-15deg) translate(50px,30px);
+
+		}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes color {
+    from {background-color: #bfbfbf;}
+    to {background-color: #3a5e98;}
+}
+
+/* Standard syntax */
+@keyframes color {
+     from {background-color: #bfbfbf;}
+    to {background-color: #3a5e98;}
+}
+
+div {
+    width: 300px;
+    height: 150px;
+    background: rgba(0, 12, 250, .2);
+    position: relative;
+    -webkit-animation: hortizonalmove 10s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forward; /* Safari 4.0 - 8.0 */
+    animation: hortizonalmove 10s;
+    animation-fill-mode: forward;
+		animation-iteration-count: infinite;
+		-webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+		transition-timing-function: ease;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes hortizonalmove {
+    from {left: -100px;}
+    to {left: 100%;}
+}
+
+@keyframes hortizonalmove {
+    from {left: -100px;}
+    to {left: 100%;}
+
+}
+
+</style>
+</head>
+<body>
+	<a href="../../index.html">Home Page</a>
+		<p> Wanda Case<br>Week 14 Assignment</p>
+
+
+<div id="color">
+<div><h1 >Dallas Cowboys<br></h1></div>
+<img class="cowboys" src="DallasCowboys.png" alt="NFL Cowboys Football Logo"/> 
+<br><br>
+</div>
+</body>
+</html>
