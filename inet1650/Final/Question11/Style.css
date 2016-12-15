@@ -1,0 +1,12 @@
+div {
+    width: 100px;
+    height: 75px;
+    background: blue;
+		margin: 50px 0 0 150px;
+    }
+p#Logo {
+	text-align: center;
+	color: white;
+	padding-top: 30px;
+  padding-bottom: 30px;
+}

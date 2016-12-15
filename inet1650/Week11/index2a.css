@@ -1,0 +1,118 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container {
+  position: relative;
+  clear: both;
+}
+body {
+  margin: 30px	30px 120px 30px;
+}
+.body2{
+	 border: 2px solid #1DEE9A;
+}
+h1{
+	text-align: center;
+	font-size:60px;
+	margin: 0px;
+	}
+div {
+    display: block;
+}
+div#special {
+   float:left;
+    top:0;
+    right:0;
+    background-color: #D64078;
+	width: 60px;
+}
+div#SectionLabel {
+  float:left;
+  clear:right;
+    top:0;
+    left:0;
+    background-color: #EECB1D;
+	width: 90px;
+	padding: 0 3px 3px 0;
+}
+div#SectionEndLabel {
+  float:right;
+    bottom:0;
+    right:0;
+    background-color: #EECB1D;
+	width: 90px;
+}
+.school{
+	font-weight: bold;
+
+}
+.nav {
+  float: right;
+  width: 200px;
+  border: 2px solid #D64078;
+  clear: both;
+}
+.nav ul {
+	display: block;
+}
+
+.nav li{
+display: list-item;
+padding: 5px 20px;
+margin-left: 5px;
+}
+a:visited {
+    color: #D64078;
+}
+a:link {
+    color: #D64078;
+    text-decoration: none;
+}
+section {
+	float:left;
+	margin: 0 200px 0 0;
+	border: 2px solid #EECB1D;
+}
+section.middle{
+	float:left;
+	background-color: #DFE1E0;
+}
+p {
+	display: block;
+	
+}
+p code, li code {
+	background-color: #ECECEC;
+	}
+	
+footer {
+  margin: 450px 0 0 0;
+  bottom: 0;
+  height: 70px;
+  border: 2px solid #8EC052;
+  text-align: center;
+  background-color: white;
+}
+div#SectionFooter {
+   float:left;
+    top:0;
+    right:0;
+    background-color: #8EC052;
+	width: 90px;
+}
+div#SectionFooter2 {
+   float: right;
+    bottom:0;
+    left:0;
+    background-color: #8EC052;
+	width: 90px;
+}
+	
+
+	
+	
+	
+@media screen and (min-width: 601px)
+
