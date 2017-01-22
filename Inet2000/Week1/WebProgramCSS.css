@@ -1,0 +1,61 @@
+body {
+	background:#fff8e0;
+	margin:10px;
+	padding:0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #888;
+}
+#container {
+	width: 960px;
+	margin: 0px auto;
+	padding: 0px;
+
+}
+.title {
+	text-align: center;
+	color: blue;
+	font-size: 40px;
+	font-family: Amaranth,"Comic Sans MS", cursive, sans-serif;
+}
+
+div.column1{
+	width: 45%;
+	height: auto;
+	float: left;
+	padding: 1%;
+	text-align: center;
+	border-style: groove;
+	margin: 5px;
+}
+div.column2 {
+	width: 45%;
+	height: auto;
+	float: left;
+	padding: 1%;
+	text-align: center;
+	border-style: groove;
+	margin: 5px;
+}
+img.sizing{
+	width: 225px;
+	height: auto;
+	padding: 2%;
+	float: left;
+	clear: both;
+}
+.Cake1 {
+	color: black;
+	padding: 2%;
+	text-align: justify;
+
+}
+
+.footer  {
+	clear: both;
+	height: auto;
+	padding: 1%;
+	color: blue;
+	text-align: center;
+
+}
