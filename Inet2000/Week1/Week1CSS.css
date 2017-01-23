@@ -44,13 +44,15 @@ img.sizing{
 	float: left;
 	clear: both;
 }
+img.logo {
+	text-align: center;
+	padding: 1%;
+}
 .Cake1 {
 	color: black;
 	padding: 2%;
 	text-align: justify;
-
 }
-
 .footer  {
 	clear: both;
 	height: auto;
