@@ -28,9 +28,41 @@
 				var results = '';
 				results = "Computer choice is <strong>: " + computerChoice + "</strong><br />";
 				results += "Your choice is <strong>: " + userChoice + "</strong><br />";
-				if(computerChoices == rock) ) 
-				
-				
+				//rock / paper = paper
+				//paper/ sissors = sissors
+				//sissors  / rock = rock
+				//same = tie
+					if(computerChoice == userChoice){
+						results += "You Tied!";
+						
+					} if (computerChoice == 'rock'){
+							if(userChoice == 'paper'){
+								results = results 'You Win!';
+						}		else{
+									results = results 'You Lose!'
+									}	
+									
+						if (computerChoice == 'sissors'){
+							if(userChoice == 'paper'){
+								results = results 'You Loss!';
+						}		else{
+									results = results 'You Win!'			
+									}
+						if (computerChoice == 'paper'){
+							if(userChoice == 'rock'){
+								results = results 'You Lose!';
+						}		else{
+									results = results 'You Lose!'		
+									}
+									
+									
+					
+
+				if(userChoices == computerChoice) {
+					document.write('tie');
+				}	else{
+						document.write ('Try again....');
+				}
 				document.getElementById('gameOutput').innerHTML = results;
 		    }
 		</script>
