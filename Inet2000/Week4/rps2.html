@@ -28,34 +28,9 @@
 				var results = '';
 				results = "Computer choice is <strong>: " + computerChoice + "</strong><br />";
 				results += "Your choice is <strong>: " + userChoice + "</strong><br />";
-
-					if(computerChoice === userChoice){
-						results += "You Tied!";
-					} 
-					else if (computerChoice == 'rock'){
-							 if (userChoice == 'paper'){
-								results += 'You Lose!';
-					}		
-						else{
-									results +='You Win!';
-					}	
-					}				
-					else if (computerChoice == 'paper'){
-							if (userChoice == 'scissors'){
-								results += 'You win!';
-					}		
-						else {
-									results += 'You lose!'	;	
-					}
-					}			
-					else if (computerChoice == 'scissors'){
-							 if(userChoice == 'rock'){
-							results +='You Win';
-						}		
-						else{
-									results += 'YOu Lose!';
-						}
-						}
+				/*
+				your code here
+				*/
 				document.getElementById('gameOutput').innerHTML = results;
 		    }
 		</script>
