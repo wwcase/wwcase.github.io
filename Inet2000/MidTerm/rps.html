@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>RPS Game</title>
+        <style type="text/css">
+        	body { 
+        		padding: 20px; 
+        		background-color: #ccc;
+        		font-family: arial;
+        	}
+        	#wrapper {
+        		width: 100%;
+        	}
+        	#gameArea {
+        		padding: 10px;
+        		text-align: center;
+        		width: 80%;
+        		margin: auto;
+        		background-color: #fafafa;
+        		border-radius: 5px;
+        	}
+        	#gameAreaLeft {
+        		width: 70%; 
+        		float: left;
+        	}
+        	#gameAreaRight {
+        		width: 30%; 
+        		float: right;
+        	}
+        	#gameIcons img {
+        		cursor: pointer;
+        	}
+        	#gameIcons img:hover, #userChoice {
+        		background-color: teal;
+        		border-radius: 50%;
+        	}
+        	#computerChoice {
+        		background-color: orange;
+        		border-radius: 50%;
+        	}
+        	#gameHistory img {
+        		width: 100px;
+        	}
+        </style>
+        
+        <script src="//code.jquery.com/jquery-3.1.1.slim.js"></script>
+			
+	    <script>
+	    	// global variables
+	    	var computerScore = 0;
+	    	var userScore = 0;
+	    	
+			var gameHistory = []; // array
+			
+		    function rpsGame(userChoice) {
+		    	var randomNumber = Math.floor(Math.random() * 3); // get a number between 0 and 2
+		    	var computerChoices = ['rock','paper','scissors']; // possible choices for computer
+		    	var computerChoice = computerChoices[randomNumber]; // use the random number select to pick a choice for the computer
+
+		    	// the following creates an array of the current choices and adds that to a global 
+		    	// array that tracks choices for each round played
+		    	gameHistory.push([computerChoice, userChoice]);
+
+				var results = '';
+				results = 'Computer selected<br /><img src="' + computerChoice + '.png" id="computerChoice" /><br />';
+
+				/*
+				add code here to determine winner
+				*/
+				
+				$('#gameOutput').html(results);
+				
+				endGame(); // call function to update score and history
+		    }
+		    
+		    function endGame() {
+		    	// update score
+		    	
+		    	/* 
+		    	Uncomment the following line to see what gameHistory looks like.  Use your
+		    	browser console to see the results.
+		    	*/
+		    	// console.log(gameHistory); 
+		    	
+		    	// update game history
+		    	var history = '';
+		    	// need to add code here to build up what the history should be
+		    	
+		    	$('#gameHistory').html(history);
+		    }
+		    
+		</script>
+    </head>
+<body>
+	<div id="wrapper">
+		<div id="gameArea">
+			<div id="gameAreaLeft">
+				<h1>Rock,Paper, Scissors</h1>
+				<hr />
+				<div id="gameIcons">
+					<h2>Make Selection</h2>
+					<img src="rock.png" onclick="rpsGame('rock');"/> 
+					<img src="paper.png" onclick="rpsGame('paper');"/> 
+					<img src="scissors.png" onclick="rpsGame('scissors');"/>
+				</div>
+				<hr />
+				<div id="gameOutput"></div>
+			</div>
+			<div id="gameAreaRight">
+				<h1>Score:</h1>
+				<h2>You <span id="userScore">0</span> / Computer <span id="computerScore">0</span></h2>
+				<hr />
+				<h3>Game History</h3>
+				<div id="gameHistory">
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+    	</div>
+    </div>
+</script>
+</body>
+</html>
