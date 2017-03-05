@@ -66,9 +66,31 @@
 				results = 'Computer selected<br /><img src="' + computerChoice + '.png" id="computerChoice" /><br />';
 				// My code below
 				if(computerChoice === userChoice){
-						gameHistory +1;
+						gameHistory ++1;
 					} 
-					
+						else if (computerChoice == 'rock'){
+							 if (userChoice == 'paper'){
+								userChoice ++1;
+					}		
+						else{
+									computerChoice ++1;
+					}	
+					}				
+					else if (computerChoice == 'paper'){
+							if (userChoice == 'scissors'){
+								userChoice ++1;
+					}		
+						else {
+									computerChoice ++1;	
+					}
+					}			
+					else if (computerChoice == 'scissors'){
+							 if(userChoice == 'rock'){
+							userChoice ++1;
+						}		
+						else{
+									computerChoice ++1;
+						}
 				//My code above
 				$('#gameOutput').html(results);
 				
