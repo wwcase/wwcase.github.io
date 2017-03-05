@@ -66,30 +66,32 @@
 				results = 'Computer selected<br /><img src="' + computerChoice + '.png" id="computerChoice" /><br />';
 				// My code below
 				if(computerChoice === userChoice){
-						results += "You Tied0!";
+						results += "You Tied!";
+						computerScore ++1;
+						userScore ++1;
 					} 
 					else if (computerChoice == 'rock'){
 							 if (userChoice == 'paper'){
-								results += 'You Lose1!';
+								results += 'You Lose!';
 					}		
 						else{
-									results +='You Win1!';
+									results +='You Win!';
 					}	
 					}				
 					else if (computerChoice == 'paper'){
 							if (userChoice == 'scissors'){
-								results += 'You win2!';
+								results += 'You Win!';
 					}		
 						else {
-									results += 'You lose2!'	;	
+									results += 'You lose!'	;	
 					}
 					}			
 					else if (computerChoice == 'scissors'){
 							 if(userChoice == 'rock'){
-							results +='You Win3';
+							results +='You Win!';
 						}		
 						else{
-									results += 'YOu Lose3!';
+									results += 'YOu Lose!';
 						}
 						}
 				//My code above
@@ -100,12 +102,16 @@
 		    
 		    function endGame() {
 		    	// update score
-		    	
+		    	if(computerChoice == userChoice){
+						computerScore ++1;
+						userScore ++1;
+						}
+						else if ( computerChoice)
 		    	/* 
 		    	Uncomment the following line to see what gameHistory looks like.  Use your
 		    	browser console to see the results.
 		    	*/
-		     console.log(gameHistory); 
+		    // console.log(gameHistory); 
 		    	
 		    	// update game history
 		    	var history = '';
