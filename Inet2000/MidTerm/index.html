@@ -65,33 +65,26 @@
 				var results = '';
 				results = 'Computer selected<br /><img src="' + computerChoice + '.png" id="computerChoice" /><br />';
 				// My code below
-				if(computerChoice === userChoice){
-						gameHistory ++1;
-					} 
-						/*else if (computerChoice == 'rock'){
-							 if (userChoice == 'paper'){
-								results = userChoice ++1;
-					}		
-						else{
-									results = computerChoice ++1;
+				
+									results +='You Win!';
 					}	
 					}				
 					else if (computerChoice == 'paper'){
 							if (userChoice == 'scissors'){
-								results = userChoice ++1;
+								results += 'You win!';
 					}		
 						else {
-									results = computerChoice ++1;	
+									results += 'You lose!'	;	
 					}
 					}			
 					else if (computerChoice == 'scissors'){
 							 if(userChoice == 'rock'){
-							results = userChoice ++1;
+							results +='You Win';
 						}		
 						else{
-									results = computerChoice ++1;
+									results += 'YOu Lose!';
 						}
-						*/
+						}
 				//My code above
 				$('#gameOutput').html(results);
 				
