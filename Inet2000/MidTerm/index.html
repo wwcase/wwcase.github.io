@@ -65,7 +65,14 @@
 				var results = '';
 				results = 'Computer selected<br /><img src="' + computerChoice + '.png" id="computerChoice" /><br />';
 				// My code below
-				
+				if(computerChoice === userChoice){
+						results += "You Tied!";
+					} 
+					else if (computerChoice == 'rock'){
+							 if (userChoice == 'paper'){
+								results += 'You Lose!';
+					}		
+						else{
 									results +='You Win!';
 					}	
 					}				
