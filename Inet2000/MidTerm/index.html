@@ -66,8 +66,9 @@
 				results = 'Computer selected<br /><img src="' + computerChoice + '.png" id="computerChoice" /><br />';
 				// My code below
 				if(computerChoice === userChoice){
-						results += "You Tied!";
+						gameHistory +1;
 					} 
+					
 				//My code above
 				$('#gameOutput').html(results);
 				
@@ -81,7 +82,7 @@
 		    	Uncomment the following line to see what gameHistory looks like.  Use your
 		    	browser console to see the results.
 		    	*/
-		    	// console.log(gameHistory); 
+		     console.log(gameHistory); 
 		    	
 		    	// update game history
 		    	var history = '';
