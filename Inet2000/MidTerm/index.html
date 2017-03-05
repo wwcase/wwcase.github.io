@@ -64,11 +64,11 @@
 
 				var results = '';
 				results = 'Computer selected<br /><img src="' + computerChoice + '.png" id="computerChoice" /><br />';
-
-				/*
-				add code here to determine winner
-				*/
-				
+				// My code below
+				if(computerChoice === userChoice){
+						results += "You Tied!";
+					} 
+				//My code above
 				$('#gameOutput').html(results);
 				
 				endGame(); // call function to update score and history
@@ -103,7 +103,7 @@
 					<img src="rock.png" onclick="rpsGame('rock');"/> 
 					<img src="paper.png" onclick="rpsGame('paper');"/> 
 					<img src="scissors.png" onclick="rpsGame('scissors');"/>
-				</div>
+					</div>
 				<hr />
 				<div id="gameOutput"></div>
 			</div>
