@@ -72,27 +72,33 @@
 					else if (computerChoice == 'rock'){
 							 if (userChoice == 'paper'){
 								results += 'You Win with Paper!';
+								userScore ++;
 								
 					}		
 						else{
 									results +='Computer Wins!';
+									computerScore ++;
 									
 					}	
 					}				
 					else if (computerChoice == 'paper'){
 							if (userChoice == 'scissors'){
 								results += 'You Win with Scissors!';
+								userScore ++;
 					}		
 						else {
 									results += 'Computer Wins!'	;	
+									computerScore ++;
 					}
 					}			
 					else if (computerChoice == 'scissors'){
 							 if(userChoice == 'rock'){
 							results +='You Win with Rock!';
+							userScore ++;
 						}		
 						else{
 									results += 'Computer Wins!';
+									computerScore ++;
 						}
 						}
 						
@@ -104,12 +110,8 @@
 		    
 		    function endGame() {
 		    	// update score
-					if (results == 'Computer Wins!'){
-						compurterScore = computerScore(endGame + 1)
-		} else { 
-					userScore = userScore(endGame + 1);
-					}
-					}
+					console.log (userScore);
+					console.log (computerScore);
 		    	/* 
 		    	Uncomment the following line to see what gameHistory looks like.  Use your
 		    	browser console to see the results.
