@@ -102,10 +102,11 @@
 		    
 		    function endGame() {
 		    	// update score
-					if (endGame == userChoice){
-						userScore = userScore(endGame +1);
+					if (results == 'Computer Wins!'){
+						compurterScore = computerScore(endGame + 1)
 		} else { 
-					compurterScore = computerScore(endGame + 1)
+					userScore = userScore(endGame + 1);
+					}
 					}
 		    	/* 
 		    	Uncomment the following line to see what gameHistory looks like.  Use your
