@@ -44,7 +44,8 @@
         	}
         </style>
         
-        <script src="//code.jquery.com/jquery-3.1.1.slim.js"></script>
+ <script src="//code.jquery.com/jquery-3.1.1.slim.js"></script> 
+	  <!--		<script src="http://code.jquery.com/jquery-3.1.1.slim.js"> </script> -->
 			
 	    <script>
 	    	// global variables
@@ -70,7 +71,7 @@
 					} 
 					else if (computerChoice == 'rock'){
 							 if (userChoice == 'paper'){
-								results += 'You Lose!';
+								results += 'Computer Wins!';
 					}		
 						else{
 									results +='You Win!';
@@ -81,7 +82,7 @@
 								results += 'You Win!';
 					}		
 						else {
-									results += 'You lose!'	;	
+									results += 'Computer Wins!'	;	
 					}
 					}			
 					else if (computerChoice == 'scissors'){
@@ -89,9 +90,11 @@
 							results +='You Win!';
 						}		
 						else{
-									results += 'YOu Lose!';
+									results += 'Computer Wins!';
 						}
 						}
+						console.log(userChoice);
+	console.log(computerChoice);	
 				//My code above
 				$('#gameOutput').html(results);
 				
@@ -100,12 +103,28 @@
 		    
 		    function endGame() {
 		    	// update score
-		  
+					var computerWin = 0;
+					var userWin = 0;
+					
+					if	(userChoice === "rock") {
+			if (computerChoice === "rock") {
+				computerWin = 0;
+				humanWin = 0;
+			}
+			else if (computerChoice ==="paper") {
+				computer = 1;
+				humanWin = 0;
+			}	
+			else {
+				computerWin = 0;
+				humanWin = 1;	
+			}
+		}	
 		    	/* 
 		    	Uncomment the following line to see what gameHistory looks like.  Use your
 		    	browser console to see the results.
 		    	*/
-		    // console.log(gameHistory); 
+				console.log(gameHistory); 
 		    	
 		    	// update game history
 		    	var history = '';
