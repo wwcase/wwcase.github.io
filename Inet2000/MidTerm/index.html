@@ -109,9 +109,8 @@
 		    
 		    function endGame() {
 		    	// update score
-					 for (var i = 0; i < 0; i++) {
-					 document.write (i);
-					 }
+					var el = document.getElementById('userScore');
+					el.innerHTML = msg;
 				
 	
 				
@@ -126,7 +125,8 @@
 		    	// update game history
 		    	var history = '';
 		    	// need to add code here to build up what the history should be
-		    	
+		    	var scores = 'gameHistory';
+					
 		    	$('#gameHistory').html(history);
 		    }
 		    
