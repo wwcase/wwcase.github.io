@@ -71,34 +71,33 @@
 					} 
 					else if (computerChoice == 'rock'){
 							 if (userChoice == 'paper'){
+							 	userScore ++;
 								results += 'You Win with Paper!';
-								userScore ++;
+							
 								
 					}		
 						else{
-									results +='Computer Wins!';
 									computerScore ++;
-									
+									results +='Computer Wins!';
 					}	
 					}				
 					else if (computerChoice == 'paper'){
 							if (userChoice == 'scissors'){
-								results += 'You Win with Scissors!';
-								userScore ++;
-					}		
+							results += 'You Win with Scissors!';
+						}		
 						else {
-									results += 'Computer Wins!'	;	
 									computerScore ++;
+									results += 'Computer Wins!'	;	
 					}
 					}			
 					else if (computerChoice == 'scissors'){
 							 if(userChoice == 'rock'){
-							results +='You Win with Rock!';
-							userScore ++;
+							 userScore ++;
+							 results +='You Win with Rock!';
 						}		
-						else{
-									results += 'Computer Wins!';
+						else{ 
 									computerScore ++;
+									results += 'Computer Wins!';
 						}
 						}
 						
@@ -110,6 +109,7 @@
 		    
 		    function endGame() {
 		    	// update score
+				
 					console.log (userScore);
 					console.log (computerScore);
 		    	/* 
