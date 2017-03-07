@@ -110,7 +110,8 @@
 		    function endGame() {
 		    	// update score
 					
-				$('userScore').replaceWith('userScore');
+				var eluserScore = document.getElementByIf('userScore');
+				eluserScore.textContent = userScore;
 	
 				
 					console.log (userScore);
