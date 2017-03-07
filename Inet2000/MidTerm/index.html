@@ -116,17 +116,25 @@
 				var elcomputerScore = document.getElementById('computerScore');
 				elcomputerScore.textContent = '' + computerScore;
 				
-					console.log (userScore);
-					console.log (computerScore);
+					//console.log (userScore);
+					//console.log (computerScore);
 		    	/* 
 		    	Uncomment the following line to see what gameHistory looks like.  Use your
 		    	browser console to see the results.
 		    	*/
-				//console.log(gameHistory); 
+				console.log(gameHistory); 
 		    	
 		    	// update game history
 		    	var history = '';
+					var roundNumber = 0;
 		    	// need to add code here to build up what the history should be
+					for (gameHistory = 0; gameHistory < arrayLenght; gameHistory++){
+					roundNumber = (gameHistory + 1)
+					msg += 'Round' + roundNumber + ': ';
+					msg += gameHistory.userChoice + gameHistory.computerChoice;
+					
+					}
+					document.getElementById('gameHistory').innerHTML = msg;
 		    	var scores = 'gameHistory';
 					
 		    	$('#gameHistory').html(history);
