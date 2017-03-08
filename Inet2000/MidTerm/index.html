@@ -128,10 +128,11 @@
 		    	var history = '';
 					
 		    	// need to add code here to build up what the history should be
-					var images = ['rock.png', 'paper.png', 'scissors.png'];
-					var rock = images[0];
-					document.getElementById('gameHistory').innerHTML = images[0];
-
+					var gameHistory = ['rock.png', 'paper.png', 'scissors.png'];
+					var i;
+					for ( i=0; 1= gameHistory.length; i>1; i++){
+					history = gameHistory[i];
+					}
 					console.log(history);
 				
 					console.log(gameHistory);
