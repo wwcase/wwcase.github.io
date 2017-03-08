@@ -128,16 +128,10 @@
 		    	var history = '';
 					
 		    	// need to add code here to build up what the history should be
-					history = gameIcons['rock.png', 'paper.png', 'scissors.png'];
-					var arrayLength = gameIcons.length;
-					var roundNumber = 0;
-					msg = '';
-					var i;
-					for (i=0; i< arrayLength; i++){
-					roundNumber = (i + 1);
-					msg =+ 'Round' + roundNumber + ': ';
-					msg+= history[gameIcons] + '<br />';
-					}
+					var elements = document.getElementsById('gameIcons');
+					if (elements.lenght > 2) {
+					var el = elements[2];
+					})
 					console.log(history);
 					console.log(msg);
 					console.log(gameIcons);
