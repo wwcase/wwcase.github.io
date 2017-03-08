@@ -129,9 +129,17 @@
 					
 		    	// need to add code here to build up what the history should be
 					history = gameHistory.push['rock.png', 'paper.png', 'scissors.png'];
+					var add = (function()){
+					var counter = history.length - 1;
+					return function()}
 					
-					
-				
+					if(counter === images.length -1){
+					counter =0
+					}else {
+					counter =+1;
+					}
+				return counter;
+				)();
 				
 					
 		    	$('#gameHistory').html(history);
