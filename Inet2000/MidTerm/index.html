@@ -128,19 +128,19 @@
 		    	var history = '';
 					
 		    	// need to add code here to build up what the history should be
-					history = gameHistory['rock.png', 'paper.png', 'scissors.png'];
-					var arrayLength = gameHistory.length;
+					history = array['rock.png', 'paper.png', 'scissors.png'];
+					var arrayLength = array.length;
 					var roundNumber = 0;
 					msg = '';
 					var i;
 					for (i=0; i< arrayLength; i++){
 					roundNumber = (i + 1);
 					msg =+ 'Round' + roundNumber + ': ';
-					msg+= scores[gameHistory] + '<br />';
+					msg+= history[array] + '<br />';
 					}
 					console.log(history);
 					console.log(msg);
-					console.log(gameHistory);
+					console.log(array);
 					
 		    	$('#gameHistory').html(history);
 		    }
