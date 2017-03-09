@@ -73,36 +73,29 @@
 							 if (userChoice == 'paper'){
 							 	userScore ++;
 								results += 'You Win with Paper!';
-							
-								
-					}		
+						}		
 						else{
 									computerScore ++;
 									results +='Computer Wins!';
-								
 					}	
 					}				
 					else if (computerChoice == 'paper'){
 							if (userChoice == 'scissors'){
 							results += 'You Win with Scissors!';
-						
 						}		
 						else {
 									computerScore ++;
 									results += 'Computer Wins!'	;	
-									
 					}
 					}			
 					else if (computerChoice == 'scissors'){
 							 if(userChoice == 'rock'){
 							 userScore ++;
 							 results +='You Win with Rock!';
-							 
 						}		
 						else{ 
 									computerScore ++;
 									results += 'Computer Wins!';
-									
 						}
 						}
 						
@@ -134,7 +127,7 @@
 		    	var history = '';
 				
 		    	// need to add code here to build up what the history should be
-				document.getElementById("history").innerHTML = gameHistory.length;
+				document.getElementById("endgame").innerHTML = gameHistory.length;
 				
 				
 
