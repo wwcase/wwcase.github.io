@@ -128,18 +128,18 @@
 		    	browser console to see the results.
 		    	*/
 					
-				
+				console.log(gameHistory); 
 		    	
 		    	// update game history
 		    	var history = '';
-				
+					var arrayLength = gameHistory.length;
 		    	// need to add code here to build up what the history should be
-				var elgameHistory = document.getElementById('userChoice');
-				elgameHistory.textContent = '' + userChoice;
+				var eluserChoice = document.getElementById('userChoice');
+				eluserChoice.textContent = '' + userChoice;
 				
 				
 					console.log(history);
-				console.log(gameHistory); 
+				
 				
 					
 		    	$('#gameHistory').html(history);
