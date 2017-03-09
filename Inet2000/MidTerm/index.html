@@ -122,35 +122,15 @@
 		    	Uncomment the following line to see what gameHistory looks like.  Use your
 		    	browser console to see the results.
 		    	*/
+					
 				//console.log(gameHistory); 
 		    	
 		    	// update game history
 		    	var history = '';
 				
 		    	// need to add code here to build up what the history should be
-					var items = [24, 32, 17];      // Array of scores
-					var arrayLength = items.length;// Items in array
-					var roundNumber = 0;            // Current round
-					var msg = '';                   // Message
-
-						// Loop through the items in the array
-					for (var i = 0; i < arrayLength; i++) {
-
-						// Arrays are zero based (so 0 is round 1)
-					// Add 1 to the current round
-					roundNumber = (i + 1);
-
-					// Write the current round to message
-				msg += 'Round ' + roundNumber + ': ';
-
-				// Get the score from the scores array
-				msg += items[i] + '<br />';
-				}
-
-				document.getElementById('gameHistory').innerHTML = msg;
-				
-				console.log('gameHistory');
-			
+					history = gamehistory[userchoice];
+					//history = ['rock.png', 'paper.png', 'scissors.png'];
 					console.log(history);
 				
 					console.log(gameHistory);
