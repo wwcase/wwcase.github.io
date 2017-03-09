@@ -125,9 +125,14 @@
 		    	
 		    	// update game history
 		    	var history = '';
-				
+				var roundNumber = 0;
 		    	// need to add code here to build up what the history should be
-				document.getElementById("endgame").innerHTML = gameHistory.length;
+					for (endgame = 0; endGame <arrayLength; endGame++) {
+					roundNumber = (endGame + 1);
+					msg += 'Round ' + roundNumber + ': ';
+					msg += gameHistory[history] = '< br />';
+					}
+				document.getElementById("gameHistory").innerHTML = msg;
 				
 				
 
