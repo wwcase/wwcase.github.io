@@ -28,23 +28,23 @@
 				desk.push({suit: suits[s], face: 'ace', value: c})
 				}
 				else if (c==11){
-				desk.push({suit: suits[s], face: 'jack', value: c})
+					desk.push({suit: suits[s], face: 'jack', value: c})
 				}
 				else if (c=12){
-				desk.push({suit: suits[s], face: 'queen', value: c})
+					desk.push({suit: suits[s], face: 'queen', value: c})
 				}
 				else if (c==13){
-				desk.push({suit: suits[s], face: 'king', value: c})}
+					desk.push({suit: suits[s], face: 'king', value: c})
+				}
+				else {
+					desk.push({suit: suits[1], face: c, value: c})
+				}
 			}
-			else{
-			desk.push({suit: suits[1], face: c, value: c})
-			}
-			}
-			}
-			return deck;
-		
 		}
-		console.log();
+			return deck;
+			console.log();
+		}
+	
 		function shuffleDeck(deck) {
 			var newDeck = [];
 			/**
