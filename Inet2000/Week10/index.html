@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf8">
+	<title>Blackjack</title>
+	<style type="text/css">
+		#cards img, #shuffled img { height: 50px; float: left; margin: 5px; }
+	</style>
+	     
+	<script src="//code.jquery.com/jquery-3.1.1.slim.js"></script>
+	
+	<script>
+		
+		function getNewDeck() {
+			var deck = [];
+			var suits = ['clubs','spades','diamonds','hearts'];
+			/**
+			* build an array of card objects. A single card object should look like the following:
+			*	{suit: 'clubs', face: 'jack', value: 11}
+			*	or
+			*	{suit: 'hearts', face: 2, value: 2}
+			**/
+			$suits = array["Spades", "Hearts", "Diamonds","Clubs"];
+			
+			$faces = array ['Two'=>2, 'Three'=>3, 'Four'=>4, 'Five'=>5, 'Six'=>6, 'Seven'=>7, 'Eight'=>8, 'Nine'=>9
+			'Ten'=>10, 'Jack'=>10, 'Queen'=>10, 'King'=>10, 'Ace'=>11];
+			
+			return deck;
+		}
+		
+		function shuffleDeck(deck) {
+			var newDeck = [];
+			/**
+			* Write the code to shuffle the deck.
+			* You'll use push and splice methods here
+			**/
+			return newDeck;
+		}
+		
+		function printDeck(deck) {
+			var cards = '';
+			/**
+			* Create a string that represents all the cards in the deck.
+			* This will be a string of "<img ...><img ...>" tags that represent the cards in the deck
+			**/
+			
+			
+			return cards;
+		}
+		
+		function game() {
+			var deck = getNewDeck();
+			$('#cards').html(printDeck(deck));
+			var deck = shuffleDeck(deck);
+			$('#shuffled').html(printDeck(deck));
+		}
+		
+		
+	</script>
+</head>
+<body>
+	<h1>Blackjack</h1>
+	<div><button onclick="game();">Show Deck</button></div>
+	<h2>New Deck</h2>
+	<div id="cards">
+	</div>
+	<h2>Sorted Deck</h2>
+	<div id="shuffled">
+	</div>
+
+</body>
+</html>
