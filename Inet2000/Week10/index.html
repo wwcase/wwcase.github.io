@@ -20,10 +20,14 @@
 			*	or
 			*	{suit: 'hearts', face: 2, value: 2}
 			**/
-			$suits = array["Spades", "Hearts", "Diamonds","Clubs"];
 			
-			$faces = array ['Two'=>2, 'Three'=>3, 'Four'=>4, 'Five'=>5, 'Six'=>6, 'Seven'=>7, 'Eight'=>8, 'Nine'=>9
+			faces = array ['Two'=>2, 'Three'=>3, 'Four'=>4, 'Five'=>5, 'Six'=>6, 'Seven'=>7, 'Eight'=>8, 'Nine'=>9
 			'Ten'=>10, 'Jack'=>10, 'Queen'=>10, 'King'=>10, 'Ace'=>11];
+			for (var s = 0; s < deck.length; s++){
+				for(var n = 0; n< faces.length; n++) {
+				desk.push( new card( n+1, name[n], suits[s]));
+				}
+			}
 			
 			return deck;
 		}
