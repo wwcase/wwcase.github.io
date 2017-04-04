@@ -51,11 +51,12 @@
 			* Write the code to shuffle the deck.
 			* You'll use push and splice methods here
 			**/
-			for (i = deck.length - 1; i >= 0; i--)
-    newDeck.push(deck.splice(Math.floor(Math.random() * deck.length))[0]);
+			for (i = newdeck.length - 1; i >= 0; i--)
+			newDeck.push(newdeck.splice(Math.floor(Math.random() * newdeck.length))[0]);
 			return newDeck;
 		}
 		
+		console.log();
 		function printDeck(deck) {
 			var cards = '';
 			/**
