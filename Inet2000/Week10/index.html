@@ -23,21 +23,21 @@
 			
 			
 			for ( s = 0; s < suits.length; s++){
-				for( c = 1; c <= 13; n++) {
+				for( c = 1; c <= 13; c++) {
 					if(c == 1){
-				desk.push({suit: suits[s], face: 'ace', value: c})
+						desk.push({suit: suits[s], face: 'ace', value: c})
 				}
-				else if (c==11){
-					desk.push({suit: suits[s], face: 'jack', value: c})
+					else if (c == 11){
+						desk.push({suit: suits[s], face: 'jack', value: c})
 				}
-				else if (c=12){
-					desk.push({suit: suits[s], face: 'queen', value: c})
+					else if (c == 12){
+						desk.push({suit: suits[s], face: 'queen', value: c})
 				}
-				else if (c==13){
-					desk.push({suit: suits[s], face: 'king', value: c})
+					else if (c == 13){
+						desk.push({suit: suits[s], face: 'king', value: c})
 				}
-				else {
-					desk.push({suit: suits[1], face: c, value: c})
+					else {
+						desk.push({suit: suits[s], face: c, value: c})
 				}
 			}
 		}
